@@ -10,7 +10,15 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-{% block content %}
-{% endblock %}
+<div class="container">
+    <div class="header">
+        <h1><a href="#">Django Girls Blog</a></h1>
+        <h4>{{ title }}</h4>
+    </div>
+    {% block content %}
+    {% endblock %}
+</div>
+
 </body>
+
 </html>
